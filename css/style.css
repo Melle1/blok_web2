@@ -66,3 +66,11 @@ article {
 article img {
     width: 15rem;
 }
+footer {
+    background-image: url(https://melle1.github.io/blok_web2/images/ams_ed_.png);
+    min-height: 2em;
+    background-position: center bottom;
+    background-size: contain;
+    height: 20vw;
+    background-repeat: no-repeat;
+}
