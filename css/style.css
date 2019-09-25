@@ -2,10 +2,11 @@
     box-sizing: border-box; 
 } 
 body {
-    font-family: "Arial", sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
+    margin: 0;
 }
 h1 {
-    
+    font-weight: 600; 
 }
 h2 {
     
@@ -14,7 +15,7 @@ h3 {
     
 }
 p {
-    
+    color: #06183D;
 }
 a {
     color: #ffffff;
@@ -38,7 +39,7 @@ nav a {
    color: white; 
 }
 nav img {
-    
+   width: 13.5rem; 
 }
 nav ul {
     list-style: none;
@@ -54,12 +55,13 @@ nav #account {
     justify-content: flex-end;
 }
 main {
-
+      grid-column: span 4;
 }
 section {
 
 }
 article {
+    
 }
 article img {
     width: 15rem;
