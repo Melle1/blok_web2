@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    box-sizing: border-box; 
+} 
+body {
+    font-family: "Arial", sans-serif;
+}
+h1 {
+    
+}
+h2 {
+    
+}
+h3 {
+    
+}
+p {
+    
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+a:hover {
+    color: #FBDD0F;
+}
+a img {
+    margin-bottom: 1em;
+    width: 17.5em;
+    background-color: none;
+}
+header {
+    background-color: #06183D;
+    padding: 1em 1em;
+}
+nav a {
+   color: white; 
+}
+nav img {
+    
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+nav li {
+    margin-left: 1em
+}
+nav #account {
+    justify-content: flex-end;
+}
+main {
+
+}
+section {
+
+}
+article {
+}
+article img {
+    width: 15rem;
+}
