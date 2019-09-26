@@ -1,10 +1,12 @@
 *, *::before, *::after {
     box-sizing: border-box; 
-} 
+}
+
 body {
     font-family: 'Be Vietnam', sans-serif;
     margin: 0;
 }
+
 #banner {
     background-image: url(https://melle1.github.io/blok_web2/images/para.png); 
     height: calc(35vh);
@@ -16,6 +18,7 @@ body {
     width: 100vw;
     text-align: center;
 }
+
 h1 {
     font-weight: 700;
     color: white;
@@ -23,40 +26,50 @@ h1 {
     background-color: rgba(0,0,0,.7);
     margin-top: -0.5em;
 }
+
 h2 {
     text-align: center;
+    font-family: Arial, sans-serif;
 }
+
 h3 {
-    
 }
+
 p {
     color: #06183D;
     font-size: 0.75em;
 }
+
 a { 
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.75em;
 }
+
 a:hover {
     color: #FBDD0F;
 }
+
 a img {
     margin-bottom: 1em;
     width: 17.5em;
     background-color: none;
 }
+
 header {
     background-color: #06183D;
     padding: 1em 1em;
 }
+
 nav a {
    color: white; 
 }
+
 nav img {
    width: 13.5rem; 
 }
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -64,47 +77,69 @@ nav ul {
     display: flex;
     justify-content: flex-start;
 }
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
 nav li {
     margin-left: 1em
 }
+
 nav #account {
     justify-content: flex-end;
 }
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
 main {
       grid-column: span 4;
 }
+
 section {
     padding: 1em;
     background: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+/* https://alligator.io/css/css-grid-layout-fr-unit/ */
+
 section h2 {
     grid-column: 1 / -1; 
 }
+
 article {
     border: 1px solid lightgrey;
     padding: 1rem;
     margin: 1rem;
     text-align: center;
-    
 }
+
 article img {
     width: 10rem;
 }
+
 button {
-color: #fff !important;
-text-transform: uppercase;
-text-decoration: none;
-background: #ed3330;
-padding: 1em;
-border-radius: 5px;
-display: inline-block;
-border: none;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 1em;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.45);
+    transition: ease-in 0.2s;
 }
+
 button:hover {
-    color: blue;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: red !important;
+    box-shadow: 0.5px 0.5px 2.5px 0px rgba(0,0,0,0.45);
+    font-weight: bold;
 }
+
+button:active {
+    transform: scale(0.9) rotate(720deg);
+}
+
 footer {
     background-image: url(https://melle1.github.io/blok_web2/images/ams_ed_.png);
     min-height: 2em;
@@ -113,3 +148,9 @@ footer {
     height: 20vw;
     background-repeat: no-repeat;
 }
+
+/* algehele bronnen:
+recap css Sonja Rouwhorst
+recap html Sonja Rouwhorst
+recap demo Sonja Rouwhorst
+*/
