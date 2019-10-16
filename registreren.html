@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mijn account</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+</head>
+
+<body class="registreren">
+
+  <header>
+      <nav>
+          <ul id="account">
+              <li><a href="favorieten.html">Favorieten</a></li>
+              <li><a href="registreren.html">Mijn account</a></li>
+          </ul>
+         <a href="#"><img src="images/logo.svg"></a>
+          <ul>
+              <li><a href="#">Alle verhalen</a></li>
+              <li><a href="#">Populair</a></li>
+              <li><a href="#">Nieuw</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <h1>Registreren</h1>
+
+  <form action="index.html">
+    <fieldset>
+      <legend>Gegevens</legend>
+      <label for="name">Voornaam</label><input type="text" required>
+      <label for="name">Achternaam</label><input type="text" required>
+      <label for="date">Geboortedatum</label><input type="date" required>
+      <label for="tel">Telefoon</label><input type="tel" minLength="10" maxlength="10" required>
+    </fieldset>
+    <fieldset>
+      <legend>Account</legend>
+      <label for="email">E-Mail</label><input type="email" required>
+      <label for="password">Wachtwoord</label><input type="password" required>
+      <label for="password">Herhaal Wachtwoord</label> <input type="password" required>
+      <input type="submit" value="Registreren">
+    </fieldset>
+
+  </form>
+</body>
+</html>
