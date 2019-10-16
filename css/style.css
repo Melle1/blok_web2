@@ -33,12 +33,13 @@ h2 {
 }
 
 h3 {
+    text-align: center;
 }
 
 p {
     color: #06183D;
     font-size: 0.75em;
-
+    text-align: left;
 }
 
 a {
@@ -117,22 +118,22 @@ article img {
 }
 
 button {
-    color: #fff !important;
+    color: #000 !important;
     text-transform: uppercase;
     text-decoration: none;
-    background: #ed3330;
+    background: #fbdd0f;
     padding: 1em;
     border-radius: 5px;
     display: inline-block;
     border: none;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: #d2b82b 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
     transition: ease-in 0.2s;
 }
 
 button:hover {
     cursor: pointer;
     transform: scale(1.05);
-    background-color: red !important;
+    background-color: #ffea6a;
     box-shadow: 0.5px 0.5px 2.5px 0px rgba(0,0,0,0.45);
     font-weight: bold;
 }
@@ -150,11 +151,43 @@ footer {
     background-repeat: no-repeat;
 }
 
+/* form */
+
+.registreren h1 {
+    background-color: #d4f1f5;
+    margin-top: 0.5em;
+    color: #06183D;
+}
+
+.registreren {
+  background-color: #d4f1f5;
+}
+
+form {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 1em 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+    background-color: white;
+}
+
+legend {
+    margin: 1em 0;
+    font-size: 1.5rem;
+}
+
+form>fieldset{
+    margin: 1.5em;
+    flex-direction: row;
+}
+
+
+
 /* algehele bronnen:
 recap css Sonja Rouwhorst
 recap html Sonja Rouwhorst
 recap demo Sonja Rouwhorst
 */
 
-/* formulier
-*/
