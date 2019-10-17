@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="15em-Versie-4" transform="translate(-165.000000, -258.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group" transform="translate(166.000000, 259.000000)">
+                <circle id="Oval" stroke="#FFFFFF" fill-opacity="0.3" opacity="0.8" cx="21.5" cy="21.5" r="21.5"></circle>
+                <path d="M30,27.79 L25.4663336,23.28925 C26.1300059,22.2515417 26.5132231,21.0225833 26.5132231,19.7057917 C26.5139367,16.009 23.4824532,13 19.7566115,13 C16.0307699,13 13,16.009 13,19.7065 C13,23.4047083 16.0307699,26.4137083 19.7566115,26.4137083 C21.0183024,26.4137083 22.1979263,26.06875 23.209848,25.4695 L27.7742003,30 L30,27.79 Z M15.5176727,19.7065 C15.5176727,17.388125 17.4194862,15.5004167 19.7558979,15.5004167 C22.0930233,15.5004167 23.9948367,17.3874167 23.9948367,19.7065 C23.9948367,22.0262917 22.0930233,23.9132917 19.7558979,23.9132917 C17.4194862,23.9132917 15.5176727,22.0262917 15.5176727,19.7065 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
