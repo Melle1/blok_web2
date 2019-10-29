@@ -7,6 +7,171 @@ body {
     margin: 0;
 }
 
+main { 
+      grid-column: span 4;
+}
+
+/* --------- HEADER --------- */
+
+.logo {
+	left: 0;
+}
+
+.logo-animate {
+	position: relative;
+	animation: slide-right 5s cubic-bezier(.89,.01,1,.05);
+}
+
+@keyframes slide-right {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 375vw;
+	}
+}
+
+header {
+    background-color: #06183D;
+    padding: 1em 1em;
+    width: 100vw;
+    max-width: 100%;
+}
+
+nav a {
+   color: white;
+}
+
+nav img {
+   width: 13.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+nav li {
+    margin-left: 1em
+}
+
+nav #account {
+    justify-content: flex-end;
+}
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+
+/* --------- SEARCH --------- */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
+
+#wrap {
+    display: inline-block;
+    position: relative;
+    height: 4em;
+    padding: 0;
+}
+
+#banner form {
+	background: transparent;
+    box-shadow: none;
+}
+
+#banner input[type="text"] {
+  height: 1.75em;
+  font-size: 3em;
+  display: inline-block;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0.25em;
+  padding-right: 2.75em;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#banner input[type="text"]:focus:hover {
+  border-bottom: 1px solid #BBB;
+}
+
+#banner input[type="text"]:focus {
+	font-family: 'Be Vietnam', sans-serif;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+	padding: 0.25em;
+	animation: slideout 0.2s ease-in forwards;
+}
+
+#banner input[type="submit"] {
+	height: 6em;
+	width: 6em;
+	display: inline-block;
+	color:red;
+	background: url(https://melle1.github.io/blok_web2/images/search.svg);
+	background-size: cover;
+	text-indent: -10000px;
+	border: none;
+	position: absolute;
+	top: -1em;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+	opacity: 1;
+	cursor: pointer;
+	transition: opacity .4s ease;
+	}
+
+.search_icon {
+	width: 3.125rem;
+	height: 3.125rem;
+}
+/* hiermee selecteer ik alleen de input in de wrap */
+
+#banner input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.wrap input[type="text"]:focus .wrap{
+    background: red;
+}
+
+/* BRON: https://codepen.io/CBeghin/pen/HeuiF?editors=1100 */
+
+@keyframes slideout {
+	0% {
+		width: 0;
+		top: 0;
+		background: transparent;
+	}
+	90% {
+		background: transparent;
+	}
+	100% {
+	display: block;
+	position: absolute;
+	left: -270%;
+	margin: auto;
+	width: 6.75em;
+	top: 2em;
+	background: white;
+	}
+}
+
+/* --------- BANNER, H1H2H3, ARTIKELEN --------- */
+
 #banner {
     background-image: url(https://melle1.github.io/blok_web2/images/para.jpg);
     height: calc(35vh);
@@ -64,58 +229,6 @@ a img {
     background-color: none;
 }
 
-/* --------- HEADER --------- */
-
-.logo {
-	left: 0;
-}
-
-.logo-animate {
-	position: relative;
-	animation: slide-right 5s cubic-bezier(.89,.01,1,.05);
-}
-
-@keyframes slide-right {
-	0% {
-		left: 0;
-	}
-	100% {
-		left: 375vw;
-	}
-}
-
-header {
-    background-color: #06183D;
-    padding: 1em 1em;
-    width: 100vw;
-    max-width: 100%;
-}
-
-nav a {
-   color: white;
-}
-
-nav img {
-   width: 13.5rem;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-}
-/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-
-nav li {
-    margin-left: 1em
-}
-
-nav #account {
-    justify-content: flex-end;
-}
-/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 #all:checked ~ article {
 	display: block;
 }
@@ -126,8 +239,6 @@ nav #account {
 	display: none;
 } 
 /* checkt of id short gecheckt is, tilde kijkt naar volende artikel, broer of zus, selecteerd alle articles niet "not short" zijn door ze weg te halen */
-
-
 
 input[type="radio"] {
 	position: absolute;
@@ -153,10 +264,6 @@ input[type="radio"] {
 .filter label:hover {
 	color: green;
 	font-weight: bold;
-}
-
-main { 
-      grid-column: span 4;
 }
 
 section {
@@ -235,25 +342,16 @@ article img:hover {
     transform: scale(0.9) rotate(2deg);
 }
 
-footer {
-    background-image: url(https://melle1.github.io/blok_web2/images/ams_ed_.png);
-    min-height: 2em;
-    background-position: center bottom;
-    background-size: contain;
-    height: 20vw;
-    background-repeat: no-repeat;
-}
-
-/* form */
+/* --------- REGISTRATIEFORM --------- */
 
 .registreren h1 {
-    background-color: #d4f1f5;
+    background-color: lightgray;
     margin-top: 0.5em;
     color: #06183D;
 }
 
 .registreren {
-  background-color: #d4f1f5;
+  background-color: snow;
 }
 
 .register_field {
@@ -362,111 +460,7 @@ fieldset {
     transform: scale(0.9) rotate(2deg);
 }
 
-/* --------- SEARCH --------- */
-
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
-
-
-#wrap {
-    display: inline-block;
-    position: relative;
-    height: 4em;
-    padding: 0;
-}
-
-#banner form {
-	background: transparent;
-    box-shadow: none;
-}
-
-#banner input[type="text"] {
-  height: 1.75em;
-  font-size: 3em;
-  display: inline-block;
-  font-weight: 100;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 0.25em;
-  padding-right: 2.75em;
-  width: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: none;
-  z-index: 3;
-  cursor: pointer;
-}
-
-#banner input[type="text"]:focus:hover {
-  border-bottom: 1px solid #BBB;
-}
-
-#banner input[type="text"]:focus {
-	font-family: 'Be Vietnam', sans-serif;
-    z-index: 1;
-    border-bottom: 1px solid #BBB;
-    cursor: text;
-	padding: 0.25em;
-	animation: slideout 0.2s ease-in forwards;
-}
-
-#banner input[type="submit"] {
-	height: 6em;
-	width: 6em;
-	display: inline-block;
-	color:red;
-	background: url(https://melle1.github.io/blok_web2/images/search.svg);
-	background-size: cover;
-	text-indent: -10000px;
-	border: none;
-	position: absolute;
-	top: -1em;
-	right: 0;
-	z-index: 2;
-	cursor: pointer;
-	opacity: 1;
-	cursor: pointer;
-	transition: opacity .4s ease;
-	}
-
-.search_icon {
-	width: 3.125rem;
-	height: 3.125rem;
-}
-/* hiermee selecteer ik alleen de input in de wrap */
-
-#banner input[type="submit"]:hover {
-  opacity: 0.8;
-}
-
-.wrap input[type="text"]:focus .wrap{
-    background: red;
-}
-
-/* BRON: https://codepen.io/CBeghin/pen/HeuiF?editors=1100 */
-
-@keyframes slideout {
-	0% {
-		width: 0;
-		top: 0;
-		background: transparent;
-	}
-	90% {
-		background: transparent;
-	}
-	100% {
-		display: block;
-		position: absolute;
-		left: -270%;
-		margin: auto;
-		width: 6.75em;
-		top: 2em;
-		background: white;
-
-	}
-}
+/* --------- TEKSTOPMAAK DP --------- */
 
 .detail {
 	font-size: 5vw;
@@ -487,15 +481,12 @@ fieldset {
 	opacity: 0.9;
 	font-size: 5.1vw;
 }
-
 #left
 {
 	float: left;
 	width: 45vw;
 	padding-left: 2em;
 }
-
-
 
 #right
 {
@@ -504,7 +495,18 @@ fieldset {
 	padding-right: 2em;
 }
 
-/* tekstopmaak dp ^^ */
+/* --------- FOOTER --------- */
+
+footer {
+    background-image: url(https://melle1.github.io/blok_web2/images/ams_ed_.png);
+    min-height: 2em;
+    background-position: center bottom;
+    background-size: contain;
+    height: 20vw;
+    background-repeat: no-repeat;
+}
+
+/* --------- MEDIAQUERIES --------- */
 
 @media only screen and (min-width: 976px) {
 	
@@ -514,21 +516,21 @@ fieldset {
 	}
 	
 	.filter {
-	width: 100%;
-	grid-column: span 3;
-	display: flex;
-	justify-content: space-around;
+		width: 100%;
+		grid-column: span 3;
+		display: flex;
+		justify-content: space-around;
 	}
 	
 	.register_field {
-	display: flex;
-    flex-direction: row;
+		display: flex;
+		flex-direction: row;
 	}
 	
 }
 @media only screen and (max-width: 786px) {
 	h1 {
-	font-size: 1.4em;
+		font-size: 1.4em;
 }
 	#banner input[type="submit"] {
 		top: 0;
@@ -670,9 +672,7 @@ https://css-tricks.com/form-validation-ux-html-css/
 https://stackoverflow.com/questions/1776915/how-to-center-absolutely-positioned-element-in-div
 */
 
-
-html {
-   cursor: url('https://melle1.github.io/blok_web2/images/laserpointer.png'), auto;	
+.registreren {	cursor:url('https://melle1.github.io/blok_web2/images/laserpointer.png')
 }
 
 

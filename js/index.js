@@ -20,8 +20,8 @@ logo.classList.remove("logo-animate");
 
 // Bronnen:
 
-//https://stackoverflow.com/questions/14735197/activate-a-javascript-function-with-a-keypress
+// https://stackoverflow.com/questions/14735197/activate-a-javascript-function-with-a-keypress
 
-//https://keycode.info/
+// https://keycode.info/
 
 // https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout 
