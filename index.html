@@ -8,14 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header>
     <nav>
         <ul id="account">
             <li><a href="favorieten.html">Favorieten</a></li>
             <li><a href="registreren.html">Mijn account</a></li>
         </ul>
-       <a href="#"><img src="images/logo.svg"></a>
+       <a href="index.html" class="logo"><img src="images/logo.svg"></a>
         <ul>
             <li><a href="index.html">Alle verhalen</a></li>
             <li><a href="#">Populair</a></li>
@@ -23,48 +22,83 @@
         </ul>
     </nav>
 </header>
-
 <main>
    <div id="banner">
-    <h1>GA VERDER WAAR JE GEBLEVEN WAS: PARANOIA</h1>
+    <h1>GA VERDER WAAR JE GEBLEVEN WAS:<br>PARANOIA</h1>
     <div id="wrap">
       <form action="" autocomplete="on">
-      <input id="search" name="search" type="text" placeholder="Zoek verhaal"><input id="search_submit" value="Rechercher" type="submit">
-      <div class="test" style="width:50px;height:50px;"></div>
+      <input class="search_button" id="search" name="search" type="text" placeholder="Zoek verhaal"><input id="search_submit" value="zoekverhaal" type="submit">
+      <div class="search_icon"></div>
       </form>
     </div>
     </div>
     <section>
         <h2>Alle verhalen</h2>
-        <article>
+        <form class="filter">
+        <fieldset>
+        <label tabindex="0" for="short">
+        	Kort
+        </label>
+        <label tabindex="0" for="middle">
+        	Middel
+        </label>
+        <label tabindex="0" for="long">
+        	Lang
+        </label>
+        </fieldset>
+        </form>
+        
+        <input type="radio" name="length" id="all" checked>
+        <input type="radio" name="length" id="short">
+        <input type="radio" name="length" id="middle">
+        <input type="radio" name="length" id="long">
+        <!-- bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+        <article class="long">
             <img src="images/paranoia.jpg">
-            <h3>Paranoia</h3>
+            <a href="#" class="tags">Lang verhaal</a>
+			<h3>Paranoia</h3>
             <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd hangt: HIER LOOPT HIJ! Gelukkig is het kloteweer en kijken de mensen niet eens mijn kant op, hoewel ze lopen te eikelen […]</p>
-            <button>Lees verder</button>
+			<a href="detailpagina.html" class="read_more">Lees "Paranoia"</a>
         </article>
-        <article>
+        <article class="middle">
             <img src="images/frustratie.jpg">
+            <a href="#" class="tags">Middel verhaal</a>
             <h3>Gefrustreerd</h3>
             <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken en kakkerlakken. Met hun nietszeggende leventjes en hun waardeloze gedachten. Ik duw een wagentje met mijn lieveling voort. Ik heb een dekentje over hem gelegd. Het ziet er niet uit […]</p>
-            <button>Lees verder</button>
+            <a href="detailpagina.html" class="read_more">Lees "Gefrustreerd"</a>
         </article>
-        <article>
+        <article class="short">
             <img src="images/plop.jpg">
+            <a href="#" class="tags">Kort verhaal</a>
             <h3>Kabouter Plop is boos</h3>
             <p>Kabouter Plop heeft te horen gekregen dat de TROS zijn programma niet meer wil uitzenden omdat het Commissariaat voor de Media te strenge eisen stelt. Samen met Kabouter Klus besluit hij om naar hun bazen te gaan, Samson en Gert. Die weten altijd wel raad. En dat blijkt! Na een pittig [...]</p>
-            <button>Lees verder</button>
+            <a href="detailpagina.html" class="read_more">Lees "Kabouter Plop"</a>
         </article>
-        <article>
-            <img src="images/bier.jpg">
-            <h3>Verrassing</h3>
-            <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’ – ‘Goed zo. Lekker wandelweer?’ […]</p>
-            <button>Lees verder</button>
+        <article class="long">
+            <img src="images/nico.jpg">
+            <a href="#" class="tags">Lang verhaal</a>
+			<h3>Nico Dijkshoorn die Mart Smeets imiteert</h3>
+            <p>Noot vooraf: de heer Nico Dijkshoorn hecht eraan te melden dat hij onderstaande niet heeft geschreven. Ik stap uit een, ja wat is het eigenlijk?, een bus. Lijn 21? Zou zomaar kunnen. Twaalf uur. In de middag. Mijn zoon, luistert u mee?, mijn grandioze zoon, diezelfde zoon die zojuist nog die knotsgekke bus bij elkaar […]</p>
+            <a href="detailpagina.html" class="read_more">Lees "Nico die Mart imiteert"</a>
+        </article>
+        <article class="middle">
+            <img src="images/stoned.jpg">
+            <a href="#" class="tags">Middel verhaal</a>
+            <h3>Stoned</h3>
+            <p>Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de atmosfeer in. Het miezert een beetje en […]</p>
+            <a href="detailpagina.html" class="read_more">Lees "Stoned"</a>
+        </article>
+        <article class="middle">
+            <img src="images/recept.jpg">
+            <a href="#" class="tags">Middel verhaal</a>
+            <h3>Recept</h3>
+            <p>Dit gerecht is vrij eenvoudig te maken. Ideaal op een doordeweekse dag als je even niet weet wat je met het leven aan moet. Als je wel weet wat je met het leven aan moet, is dit gerecht ook heel lekker. Drinksuggestie: een krat bier. Ingrediënten: Hoofdingrediënten: 1 Max Molovich (ongeveer 77 kilogram) 1 zoon […]</p>
+            <a href="detailpagina.html" class="read_more">Lees "Recept"</a>
         </article>
     </section>
 </main>
-
 <footer>
 </footer>
-
+<script src="js/index.js"></script>
 </body>
 </html>

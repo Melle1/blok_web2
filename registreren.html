@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
 </head>
-
 <body class="registreren">
-
   <header>
       <nav>
           <ul id="account">
               <li><a href="favorieten.html">Favorieten</a></li>
               <li><a href="registreren.html">Mijn account</a></li>
           </ul>
-         <a href="#"><img src="images/logo.svg"></a>
+         <a href="index.html"><img src="images/logo.svg"></a>
           <ul>
               <li><a href="index.html">Alle verhalen</a></li>
               <li><a href="#">Populair</a></li>
@@ -24,29 +22,44 @@
           </ul>
       </nav>
   </header>
-
   <h1>Registreren</h1>
-
-  <form action="index.html">
-    <fieldset>
+  <form class="register_field" action="index.html">
+    <fieldset class="contact_info">
       <legend>Gegevens</legend>
       <label for="name">Voornaam
-          <input type="text" id="name" required>
+          <input type="text" id="name" placeholder="John" required>
       </label>
-      <label for="name">Achternaam</label><input type="text" required>
-      <label for="date">Geboortedatum</label><input type="date" required>
-      <label for="tel">Telefoonnummer</label><input type="tel" minLength="10" maxlength="10" required>
+      <label for="name">Achternaam
+      <input type="text" placeholder="Doe" required></label>
+      <label for="date">Geboortedatum
+      <input type="date" placeholder="4 juni '93" required>
+      </label>
+      <label for="tel">Telefoonnummer
+      <input type="tel" minLength="10" maxlength="10" placeholder="0612944593" required>
+      <div class="requirements">Je telefoonnummer moet uit 10 cijfers bestaan</div>
+      </label>
     </fieldset>
-    <fieldset>
+    <fieldset class="account_info">
       <legend>Accountgegevens</legend>
-      <label for="email">E-mail</label><input type="email" required>
-      <label for="password">Wachtwoord</label><input type="password" required>
-      <label for="password">Herhaal wachtwoord</label> <input type="password" required>
+      <label for="email">
+      	E-mail
+      	<input type="email" placeholder="john@doe.com" required>
+      	<div class="requirements">Dit e-mailadres bestaat niet</div>
+      </label>
+      <label for="password">
+      	Wachtwoord
+      	<input type="password" id="password" placeholder="••••••" minlength="6" required>
+      	<div class="requirements">Je wachtwoord moet langer dan 6 tekens zijn.</div>
+      </label>
+      <label for="repeat_password">
+      	Herhaal wachtwoord
+      	<input type="password" id="repeat_password" placeholder="••••••" minlength="6" required>
+      	<div class="requirements">Je wachtwoorden komen niet overeen</div>
+      </label> 
       <input type="submit" value="Registreren">
     </fieldset>
-
-    <!-- https://www.w3schools.com/howto/howto_css_signup_form.asp -->
-
   </form>
+      <!-- https://www.w3schools.com/howto/howto_css_signup_form.asp -->
+      <!-- https://css-tricks.com/form-validation-ux-html-css/ -->
 </body>
 </html>
