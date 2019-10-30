@@ -280,11 +280,16 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* kijkt naar de beschikbare ruimte en gebruikt fractional units om twee kolommen naast elkaar te zetten */
+
 /* https://alligator.io/css/css-grid-layout-fr-unit/ */
 
 section h2 {
     grid-column: 1 / -1;
 }
+
+/* de section h2 pakt de volledige beschikbare breedte */
 
 article {
     border: 1px solid lightgrey;
@@ -349,6 +354,8 @@ article img:hover {
 .read_more:active {
     transform: scale(0.9) rotate(2deg);
 }
+
+/* wanneer de button ingeklikt wordt */
 
 /* --------- REGISTRATIEFORM --------- */
 
@@ -525,11 +532,12 @@ footer {
 /* --------- MEDIAQUERIES --------- */
 
 @media only screen and (min-width: 976px) {
-	
 	section {
     	display: grid;
    		grid-template-columns: 1fr 1fr 1fr;
 	}
+	
+	/* boven de 976px worden er 3 kolommen over de beschikbare breedte getoond */
 	
 	.filter {
 		width: 100%;
@@ -541,8 +549,7 @@ footer {
 	.register_field {
 		display: flex;
 		flex-direction: row;
-	}
-	
+	}	
 }
 @media only screen and (max-width: 786px) {
 	h1 {
@@ -688,7 +695,9 @@ https://css-tricks.com/form-validation-ux-html-css/
 https://stackoverflow.com/questions/1776915/how-to-center-absolutely-positioned-element-in-div
 */
 
-.registreren h1 {	cursor:url('https://melle1.github.io/blok_web2/images/laserpointer1.png'), auto
+/* Easter eggje (sst): */
+
+.registreren h1, header {	cursor:url('https://melle1.github.io/blok_web2/images/laserpointer1.png'), auto
 }
 
 
