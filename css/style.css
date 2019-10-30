@@ -497,7 +497,7 @@ fieldset {
 		-5px -5px black;
 		letter-spacing: 0.3em;
 		color: red;
-		transition: ease-in 2s;
+		transition: ease-in 0.2s;
 }
 
 .detail h1:hover {
