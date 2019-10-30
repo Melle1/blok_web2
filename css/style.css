@@ -8,8 +8,9 @@ body {
 }
 
 main { 
-      grid-column: span 4;
+      grid-column: span 3;
 }
+/* items in de grid pakken een 3-kolomsbreedte */
 
 /* --------- HEADER --------- */
 
@@ -30,6 +31,7 @@ main {
 		left: 375vw;
 	}
 }
+/* op hoeveel procent van de animatie neemt het element welke positie in */
 
 header {
     background-color: #06183D;
@@ -53,6 +55,9 @@ nav ul {
     display: flex;
     justify-content: flex-start;
 }
+
+/* flex-start: de items worden aan het begin uitgelijnd (links) */
+
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
 nav li {
@@ -62,14 +67,13 @@ nav li {
 nav #account {
     justify-content: flex-end;
 }
+
+/* flex-end: de items worden aan het einde uitgelijnd (rechts) */
+
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
 
 /* --------- SEARCH --------- */
-
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
-
 
 #wrap {
     display: inline-block;
@@ -77,11 +81,13 @@ nav #account {
     height: 4em;
     padding: 0;
 }
+/* de wrap die om het search element heen zit */
 
 #banner form {
 	background: transparent;
     box-shadow: none;
 }
+/* de form die zich om de button en tekstinvoer bevindt */
 
 #banner input[type="text"] {
   height: 1.75em;
@@ -101,6 +107,7 @@ nav #account {
   z-index: 3;
   cursor: pointer;
 }
+/* styling van de tekst wanneer deze uitgeklapt is */
 
 #banner input[type="text"]:focus:hover {
   border-bottom: 1px solid #BBB;
@@ -114,6 +121,7 @@ nav #account {
 	padding: 0.25em;
 	animation: slideout 0.2s ease-in forwards;
 }
+/* styling van de tekst wanneer deze uitgeklapt en geselecteerd is */
 
 #banner input[type="submit"] {
 	height: 6em;
@@ -138,7 +146,7 @@ nav #account {
 	width: 3.125rem;
 	height: 3.125rem;
 }
-/* hiermee selecteer ik alleen de input in de wrap */
+/* hiermee selecteer ik alleen de input in de banner */
 
 #banner input[type="submit"]:hover {
   opacity: 0.8;
@@ -254,7 +262,7 @@ input[type="radio"] {
 	display: flex;
 	justify-content: space-around;
 }
-/* grid column kijkt naar de kolommen en kijkt naar 2 ipv 1 */
+/* grid column kijkt naar de kolommen en kijkt naar 2 ipv 1. Hij gaat dus over de breedte van 2 kolommen */
 
 .filter label {
 	cursor: pointer;
